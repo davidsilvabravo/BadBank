@@ -1,0 +1,281 @@
+html,body, #root {
+  height: 100%;
+}
+
+body {
+  background-image: url("../public/images/piggy.jpg");
+  background-size: cover;
+  color: #253237;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 15px;
+  height: 600px;
+}
+
+.card {
+  box-shadow: 0px 5px 7px #25323762;
+  width: 50rem;
+  height: 100%;
+}
+
+.container-fluid{
+  padding-left: 20%;
+  padding-right: 20%;
+  align-items: center;
+  text-align: justify;
+}
+
+.nav-item{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight:400;
+}
+
+#navbarNav{
+  display: flex;
+  align-items: baseline;
+  width:max-content;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: #083664;
+  box-shadow: 0 3px 8px #25323762;
+}
+
+.nav-link{
+  color: white;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: rgb(0, 255, 110);
+}
+
+.btn {
+  color: white;
+  background-color: #212529;
+}
+
+.btn-primary {
+  border-color: #212529;
+}
+
+.nav-item:hover {
+  background-color: #8d99ae6c;
+  border-radius: 3px;
+}
+
+.card-title {
+  color: #212529;
+  font-size: 35px;
+}
+
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  max-height: 90vh;
+  margin-top: calc(95vh - 85vh - 20px);
+  background: transparent;
+  border-radius: 5px;
+  padding: 20px;
+  border: none;
+  overflow: auto;
+}
+
+.custom-input-box {
+  /* width: 500px; */
+  width: 100%;
+}
+
+.custom-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-btn-cancel {
+  background-color: rgb(71, 71, 71);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.bad-policy-practice {
+  font-size: 8px;
+  color: rgb(161, 161, 161);
+}
+
+.row {
+  display: flex;
+}
+
+.avatar-container {
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+}
+
+.userInfo-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.custom-table {
+  height: 329px;
+}
+
+.report-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.chart-container {
+  background-color: white;
+  border-radius: 5px;
+  width: 650px;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text {
+  padding: 5px;
+  position: relative;
+  left: 25px;
+  bottom: 50px;
+  background: #bebebe;
+  color: black;
+  display: block;   /* <----- hides text by default */
+}
+
+.nav-active{
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  color: rgb(0, 255, 110);
+  text-decoration:none;
+  padding: 8px;
+}
+
+#balance{
+  text-align: center;
+  margin-bottom: 0;
+  color: #083664;
+  height: 50px;
+  font-weight: 50px;
+  padding-top: 16px;
+}
+
+#family{
+  color: #083664;
+}
+
+.card-img-top{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#cardDeposit, #cardWithdraw, #cardCreateAccount{
+  width: 40rem;
+  padding: 20px;
+  zIndex: -1;
+  opacity: 0.85;
+}
+
+#registerForm{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#lineadegrade{
+  border-radius: 10px;
+}
+
+#depositAmount{
+  text-align: center;
+}
+
+div.MuiBox-root{ /*PADRE*/
+  vertical-align: middle;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+button.MuiButtonBase-root{ /*SEGUNDO HIJO*/
+  height: 60%;
+  align-items: center;
+}
+
+div.MuiFormControl-root.MuiTextField-root.text-box.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+  margin-right: 40px;
+}
+
+div.MuiFormControl-root.MuiTextField-root.text-box.custom-input-box.no-padding-right.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+  margin-right: 0px;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-sghohy-MuiButtonBase-root-MuiButton-root{
+  margin: 10px;
+}
+
+#idNo{
+  backgroundColor: "#1976D2";
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+}
+
+th.MuiTableCell-head{
+  font-weight: bold;
+}
+
+#idUserList{
+  text-shadow: 0 0 20px #fff;
+}
